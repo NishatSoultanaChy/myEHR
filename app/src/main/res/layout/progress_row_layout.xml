@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/grad"
+    android:layout_margin="@dimen/cardview_default_radius"
+    android:outlineSpotShadowColor="@color/colorAccent"
+    android:outlineAmbientShadowColor="@color/colorGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_prescriptions"/>
+
+        <LinearLayout
+            android:paddingHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor's Name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:id="@+id/progress_doctor_name_list"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:id="@+id/progress_date_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor Phone:"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:id="@+id/progress_doctor_phone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

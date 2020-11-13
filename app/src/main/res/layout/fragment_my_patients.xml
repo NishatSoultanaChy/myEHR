@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.MyDoctorsFragment_P"
+    android:id="@+id/recyclerview_myPatients"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:background="@color/colorSkyblue"
+    android:layout_marginBottom="1dp"
+    android:visibility="visible">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+

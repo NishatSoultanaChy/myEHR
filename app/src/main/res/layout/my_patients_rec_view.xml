@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/grad"
+    android:layout_margin="@dimen/cardview_default_radius"
+    android:outlineSpotShadowColor="@color/colorAccent"
+    android:outlineAmbientShadowColor="@color/colorGreen"
+    android:id="@+id/patient_list_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:id="@+id/patient_name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birth Date"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:id="@+id/birth_date" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:id="@+id/patient_phone"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>

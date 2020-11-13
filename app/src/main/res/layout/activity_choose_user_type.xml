@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseUserTypeActivity"
+    android:background="@color/colorSkyblue">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham"
+            android:shadowColor="#57000000"
+            android:text="@string/registerAs"
+            android:background="@color/colorSkyblue"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#FCF9F9"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/b_reg_patient"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/gotham"
+            android:text="@string/patient"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPurple"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/b_reg_doctor"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="@font/gotham"
+            android:text="@string/doctor"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPurple"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/gotham"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:shadowColor="#57000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="2"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

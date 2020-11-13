@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Add Chambers"
+            android:icon="@drawable/search"
+            android:id="@+id/add_chambers"
+            />
+        <item
+            android:title="Patients"
+            android:icon="@drawable/basket"
+            android:id="@+id/patient_list"
+            />
+
+
+    </group>
+    <item android:title=""
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Support"
+                    android:icon="@drawable/setting"
+                    android:id="@+id/supportDoc"
+                    />
+                <item
+                    android:title="Sign Out"
+                    android:icon="@drawable/support"
+                    android:id="@+id/sign_outDoc"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

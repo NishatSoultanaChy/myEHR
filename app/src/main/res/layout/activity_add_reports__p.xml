@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.AddReports_P">
+
+    <TextView
+        android:id="@+id/ad_rpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#57000000"
+        android:text="Add your report"
+        android:background="@drawable/buttonshape2"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TN"
+        android:layout_below="@+id/ad_rpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#000000">
+
+        <EditText
+            android:id="@+id/id_test_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Enter the Test Name"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TD"
+        android:layout_below="@+id/TN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#000000">
+
+        <EditText
+            android:id="@+id/id_test_date"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Enter the Test Date"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AB"
+        android:layout_below="@+id/TD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#000000">
+
+        <EditText
+            android:id="@+id/id_assignedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Assigner Doctor"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:importantForAutofill="no" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_Select_PDF"
+        android:layout_below="@+id/AB"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Select PDF"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@color/colorPurple"
+        android:textSize="18sp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_below="@+id/btn_Select_PDF"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/buttonshape2"
+        android:textColor="@color/colorGreen"
+        android:textSize="18sp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

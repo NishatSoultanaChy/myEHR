@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.MyHealthTrackFragment_P">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/cardViewBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:background="@drawable/buttonshape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorPurple"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:shadowColor="#57000000"
+                    android:text="Blood Pressure Diary"
+                    android:background="@drawable/buttonshape2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#FCF9F9"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:outlineAmbientShadowColor="@color/colorPurple"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    android:textColorHighlight="@color/colorGreen"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/enter_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Date and Time"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/sys_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Systolic Pressure"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/dias_value"
+
+                        android:layout_below="@+id/sys_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Diastolic Pressure"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/heartRate_value"
+
+                        android:layout_below="@+id/sys_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Heart Rate"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_insert"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dias_value"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                    android:background="@drawable/buttonshape2"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Insert"
+                    android:textColor="@color/colorPurple"
+                    android:textColorHighlight="@color/colorGreen"
+                    android:textSize="20sp" />
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorWhite"
+                    android:paddingTop="10dp">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_viewChart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Chart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/buttonshape2"
+                        ></Button>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorPurple"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorPurple"/>
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham"
+                    android:shadowColor="#57000000"
+                    android:text="Diabetes Diary"
+                    android:background="@drawable/buttonshape2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#FCF9F9"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:outlineAmbientShadowColor="@color/colorPurple"
+                    android:outlineSpotShadowColor="@color/colorPrimary"
+                    android:textColorHighlight="@color/colorGreen"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/enter_date_time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Date and Time"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/beforeMeal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Glucose Level Before Meal"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColorHint="#000000">
+
+                    <EditText
+                        android:id="@+id/afterMeal"
+
+                        android:layout_below="@+id/sys_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Glucose level after meal"
+                        android:paddingTop="10dp"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:background="@color/colorWhite" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_insert2"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dias_value"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                    android:background="@drawable/buttonshape2"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Insert"
+                    android:textColor="@color/colorPurple"
+                    android:textColorHighlight="@color/colorGreen"
+                    android:textSize="20sp" />
+
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/linechart2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorWhite"
+                    android:paddingTop="10dp">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_viewChartDiabetes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Chart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/buttonshape2"
+                        ></Button>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/colorPurple"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+

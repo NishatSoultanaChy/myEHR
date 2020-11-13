@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "256214780546",
+    "firebase_url": "https://ehrtest-31c5e.firebaseio.com",
+    "project_id": "ehrtest-31c5e",
+    "storage_bucket": "ehrtest-31c5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256214780546:android:c0b463e61ec9f11c6b029b",
+        "android_client_info": {
+          "package_name": "com.example.ehr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256214780546-7almjbhib3csvj9leoake3roi91bq4pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ehr",
+            "certificate_hash": "0c3943aa32b64ba0d08790f50e4a88e2a2cc2f58"
+          }
+        },
+        {
+          "client_id": "256214780546-k1na47mg1hj52tmi2515ii2epkaapkt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDxNuAqvgPv8Um8XXjvlzlZYSAZ_bbI1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256214780546-k1na47mg1hj52tmi2515ii2epkaapkt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256214780546:android:c23cd2b2f1e93f576b029b",
+        "android_client_info": {
+          "package_name": "com.nishatsultana.myehr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256214780546-k1na47mg1hj52tmi2515ii2epkaapkt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDxNuAqvgPv8Um8XXjvlzlZYSAZ_bbI1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256214780546-k1na47mg1hj52tmi2515ii2epkaapkt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

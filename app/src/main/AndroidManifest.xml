@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nishatsultana.myehr">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Doctor.AddProgressActivity"></activity>
+        <activity android:name=".Doctor.ProgresReportActivity" />
+        <activity android:name=".Doctor.AddHistoryActivity" />
+        <activity android:name=".Doctor.PreviousPrescriptionsActivity" />
+        <activity android:name=".Doctor.WritePrescriptionActivity" />
+        <activity android:name=".Doctor.MyPatientReportsActivity" />
+        <activity android:name=".Doctor.MyPatientSymptomActivity" />
+        <activity android:name=".Doctor.AddchambersActivity" />
+        <activity android:name=".Patient.AddSymptomsActivity" />
+        <activity android:name=".Patient.SymptomsActivity" />
+        <activity android:name=".Patient.SupportActivity" />
+        <activity android:name=".Patient.AddPatientLabReportActivity" />
+        <activity android:name=".Patient.PatientReportList" />
+        <activity android:name=".Patient.ViewPDFActivity" />
+        <activity android:name=".Patient.MyHealthDocActivity" />
+        <activity android:name=".Doctor.MyPatientProfileActivity" />
+        <activity android:name=".Doctor.update_doctor_info" />
+        <activity android:name=".Patient.update_patient_info_activity" />
+        <activity android:name=".Patient.AddReports_P" />
+        <activity android:name=".PrescriptionActivity" />
+        <activity android:name=".Doctor.DoctorHomeActivity" />
+        <activity android:name=".Doctor.RegisterAsDoctorActivity" />
+        <activity android:name=".Patient.PatientHomeActivity" />
+        <activity android:name=".ChooseUserTypeActivity" />
+        <activity android:name=".Patient.RegisterAsPatientActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OpeningActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

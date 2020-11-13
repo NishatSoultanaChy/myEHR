@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.WritePrescriptionActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorSkyblue">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_prescriptions"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Write New Prescription"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/calibri"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorSkyblue"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/pres_ptnt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/calibri"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPurple"
+            android:gravity="center"></TextView>
+
+        <TextView
+            android:id="@+id/pres_ptnt_birthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Birth Date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/calibri"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPurple"
+            android:gravity="center"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#000000">
+
+            <EditText
+                android:id="@+id/edit_presc_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Date"
+                android:inputType="date"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:importantForAutofill="no"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#000000">
+
+            <EditText
+                android:id="@+id/write_presc_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Write Prescription Here:"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:importantForAutofill="no"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_save_presc"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonshape2"
+            android:textColor="@color/colorPurple"
+            android:textSize="18sp"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
